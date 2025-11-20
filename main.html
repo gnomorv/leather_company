@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        * { font-family: 'Montserrat', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tan': '#D2B48C',
+                        'dark-brown': '#654321'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-black">
+
+    <header id="header" class="border-b border-black p-5">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <div class="text-2xl font-bold">Leather Luxe</div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-dark-brown transition-colors">Home</a>
+                    <a href="#" class="hover:text-dark-brown transition-colors">Shop</a>
+                    <a href="#" class="hover:text-dark-brown transition-colors">About Us</a>
+                    <a href="#" class="hover:text-dark-brown transition-colors">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-6">
+                <i class="fa-solid fa-search text-lg hover:text-dark-brown cursor-pointer transition-colors"></i>
+                <i class="fa-solid fa-user text-lg hover:text-dark-brown cursor-pointer transition-colors"></i>
+                <div class="relative">
+                    <i class="fa-solid fa-shopping-cart text-lg hover:text-dark-brown cursor-pointer transition-colors"></i>
+                    <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="h-[600px] bg-tan relative overflow-hidden">
+            <div class="max-w-7xl mx-auto h-full flex items-center p-5">
+                <div class="w-1/2 space-y-6">
+                    <h1 class="text-5xl font-bold text-black leading-tight">Premium Leather Accessories</h1>
+                    <p class="text-lg text-dark-brown">Discover our handcrafted collection of luxury leather goods, designed for the modern professional.</p>
+                    <button class="bg-black text-white px-8 py-3 border border-black hover:bg-white hover:text-black transition-colors font-medium">Shop Now</button>
+                </div>
+                <div class="w-1/2 h-full overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b6cc6e19c-27754d41ad481180aaea.png" alt="luxury leather handbag and wallet on elegant background, professional product photography, warm lighting" />
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-categories" class="py-20 p-5">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="h-80 overflow-hidden border border-black">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4feb30fd3f-3c4732478699a7fc1765.png" alt="collection of leather bags and purses, professional product photography" />
+                        </div>
+                        <h3 class="text-xl font-medium mt-4 text-center">Bags & Purses</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="h-80 overflow-hidden border border-black">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/61117a8cb5-ecfe3883882f7347804b.png" alt="leather wallets and accessories, premium quality, professional photography" />
+                        </div>
+                        <h3 class="text-xl font-medium mt-4 text-center">Wallets</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="h-80 overflow-hidden border border-black">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/891062b1c5-44b34830d02719e2c98f.png" alt="leather belts and accessories, luxury items, professional product photography" />
+                        </div>
+                        <h3 class="text-xl font-medium mt-4 text-center">Belts & More</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="py-20 bg-gray-50 p-5">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="bg-white border border-black group">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/581c30aeaf-62e4ae2e72f35a286463.png" alt="luxury leather handbag, black color, professional product photography" />
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-medium mb-2">Classic Leather Handbag</h3>
+                            <p class="text-dark-brown text-sm mb-3">Premium quality leather</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold">$299</span>
+                                <button class="bg-black text-white px-4 py-2 text-sm border border-black hover:bg-white hover:text-black transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-black group">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/119773bb9e-e06d490c373e5edb436b.png" alt="brown leather wallet, luxury design, professional product photography" />
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-medium mb-2">Executive Wallet</h3>
+                            <p class="text-dark-brown text-sm mb-3">Handcrafted leather wallet</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold">$89</span>
+                                <button class="bg-black text-white px-4 py-2 text-sm border border-black hover:bg-white hover:text-black transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-black group">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/31da8da0c8-ed20ea2ec44c769e034c.png" alt="leather briefcase, professional business bag, luxury design" />
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-medium mb-2">Business Briefcase</h3>
+                            <p class="text-dark-brown text-sm mb-3">Professional leather case</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold">$459</span>
+                                <button class="bg-black text-white px-4 py-2 text-sm border border-black hover:bg-white hover:text-black transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-black group">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/03210d21c8-7d3de80b6cd5918a8c3b.png" alt="leather belt, classic design, luxury accessory, professional photography" />
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-medium mb-2">Classic Leather Belt</h3>
+                            <p class="text-dark-brown text-sm mb-3">Genuine leather construction</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold">$129</span>
+                                <button class="bg-black text-white px-4 py-2 text-sm border border-black hover:bg-white hover:text-black transition-colors">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <button class="bg-black text-white px-8 py-3 border border-black hover:bg-white hover:text-black transition-colors font-medium">View All Products</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" class="py-20 p-5">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold">Crafted with Excellence</h2>
+                    <p class="text-lg text-dark-brown">At Leather Luxe, we believe in creating timeless pieces that combine traditional craftsmanship with modern design. Each product is carefully handcrafted using the finest materials.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-dark-brown"></i>
+                            <span>Premium quality leather materials</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-dark-brown"></i>
+                            <span>Handcrafted by skilled artisans</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-check text-dark-brown"></i>
+                            <span>Lifetime quality guarantee</span>
+                        </li>
+                    </ul>
+                    <button class="bg-black text-white px-8 py-3 border border-black hover:bg-white hover:text-black transition-colors font-medium">Learn More</button>
+                </div>
+                <div class="h-96 overflow-hidden border border-black">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/710dcd3623-66ac3d73d38d622238d8.png" alt="leather craftsman working on luxury bag, workshop environment, traditional craftsmanship" />
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="py-20 bg-tan p-5">
+            <div class="max-w-4xl mx-auto text-center space-y-6">
+                <h2 class="text-3xl font-bold">Stay Updated</h2>
+                <p class="text-lg text-dark-brown">Subscribe to our newsletter and be the first to know about new arrivals and exclusive offers.</p>
+                <div class="flex justify-center max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 border border-black focus:outline-none">
+                    <button class="bg-black text-white px-6 py-3 border border-black hover:bg-white hover:text-black transition-colors font-medium">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-black text-white p-5">
+        <div class="max-w-7xl mx-auto py-12">
+            <div class="grid grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold">Leather Luxe</h3>
+                    <p class="text-gray-300">Premium leather accessories for the modern professional.</p>
+                    <div class="flex space-x-4">
+                        <i class="fa-brands fa-facebook text-lg hover:text-tan cursor-pointer transition-colors"></i>
+                        <i class="fa-brands fa-instagram text-lg hover:text-tan cursor-pointer transition-colors"></i>
+                        <i class="fa-brands fa-twitter text-lg hover:text-tan cursor-pointer transition-colors"></i>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-medium">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-tan transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-tan transition-colors">Shop</a></li>
+                        <li><a href="#" class="hover:text-tan transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-tan transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-medium">Customer Service</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-tan transition-colors">My Account</a></li>
+                        <li><a href="#" class="hover:text-tan transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-tan transition-colors">Returns</a></li>
+                        <li><a href="#" class="hover:text-tan transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-medium">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@leatherluxe.com</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Leather St, City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Leather Luxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
